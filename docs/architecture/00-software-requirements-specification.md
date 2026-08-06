@@ -17,23 +17,23 @@ The first version of NexusAI focuses on document intelligence and enterprise kno
 
 Supported document types include:
 
-PDF Documents
-Word Documents (.docx)
-Images (.png, .jpg, .jpeg)
-Excel Sheets, CSV files
+- PDF Documents
+- Word Documents (.docx)
+- Images (.png, .jpg, .jpeg)
+- Excel Sheets, CSV files
 
 Future versions may support additional document formats and integrations with enterprise systems.
 
 ### 1.3 Intended Audience
 This document is intended for:
 
-Software Engineers
-AI Engineers
-Backend Developers
-System Architects
-QA Engineers
-Product Managers
-Project Stakeholders
+- Software Engineers
+- AI Engineers
+- Backend Developers
+- System Architects
+- QA Engineers
+- Product Managers
+- Project Stakeholders
 
 ### 1.4 Definitions
 | Term | Description |
