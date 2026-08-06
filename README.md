@@ -6,40 +6,56 @@ Transforming scattered enterprise knowledge into an intelligent, searchable, and
 
 ## Vision
 
-NexusAI is a production-oriented AI platform for intelligent document processing, OCR, Retrieval-Augmented Generation (RAG), and scalable backend architecture.
+NexusAI is a production-oriented enterprise AI platform designed for intelligent document processing, Retrieval-Augmented Generation (RAG), and scalable backend architecture. The platform aims to centralize organizational knowledge and enable secure, AI-powered search across enterprise documents.
 
-## Current Status
+## Project Status
 
-🚧 Project is under active development.
+🚧 **Under Active Development**
 
-### Current Phase:
-Project Planning & System Design
+**Current Phase:** Architecture & System Design
 
-## Planned Features
+The foundational architecture of the platform has been completed, including system design, database modeling, authentication architecture, and deployment planning. Development will now proceed module by module, with each component implemented incrementally.
 
-### Backend
+## Development Roadmap
+
+### Phase 1 — Architecture & Planning ✅
+
+- System Architecture
+- Database Design
+- Authentication & Authorization Design
+- Deployment Architecture
+
+### Phase 2 — Backend Foundation 🚧
 
 - FastAPI
 - PostgreSQL
 - SQLAlchemy
 - Alembic
-- JWT Authentication
-- RBAC
 - Docker
 - Logging
 - Exception Handling
 
-### AI
+### Phase 3 — Authentication
 
+- JWT Authentication
+- Refresh Tokens
+- Role-Based Access Control (RBAC)
+- Multi-Tenant Authentication
+
+### Phase 4 — AI Pipeline
+
+- Document Upload
 - OCR
-- RAG
-- Vector Database
+- Chunking
+- Embedding Generation
+- Vector Database Integration
+- Retrieval-Augmented Generation (RAG)
 - Citation Support
 - Streaming Responses
 
-### Enterprise
+### Phase 5 — Enterprise Features
 
-- Multi-Tenant Architecture
 - Organization Management
 - User Management
 - Audit Logs
+- Admin Dashboard
