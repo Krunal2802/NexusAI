@@ -1,13 +1,43 @@
 services:
 
+  backend:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: nexusai-backend
+    command:
+      - .venv/bin/python
+      - -m
+      - uvicorn
+      - app.main:app
+      - --host
+      - "0.0.0.0"
+      - --port
+      - "8000"
+      - --reload
+      - --reload-dir
+      - /app/app
+    env_file:
+      - path: ../.env
+        required: false
+    ports:
+      - "8000:8000"
+    volumes:
+      - ../app:/app/app
+    depends_on:
+      - postgres
+      - redis
+      - qdrant
+    restart: unless-stopped
+
   postgres:
     image: postgres:17
     container_name: nexusai-postgres
 
     environment:
-      POSTGRES_DB: nexusai
-      POSTGRES_USER: nexusai
-      POSTGRES_PASSWORD: nexusai_dev_password
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
 
     ports:
       - "5432:5432"
